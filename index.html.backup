@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="DSAND — protein for real life. Powder, coffee, tea and soup designed around your routine." />
+<title>DSAND Nutrilabs — Protein for Real Life</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header" id="header" aria-label="Site header">
+  <div class="header-inner">
+    <a href="#" class="logo" aria-label="DSAND home">DSAND</a>
+    <nav class="nav-main" aria-label="Main">
+      <a href="#lineup">Lineup</a>
+      <a href="#day">Day</a>
+      <a href="#quality">Quality</a>
+      <a href="#journal">Notes</a>
+    </nav>
+    <a href="#lineup" class="btn-ghost">Shop</a>
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu" type="button"><span></span><span></span></button>
+  </div>
+  <nav class="mobile-nav" id="mobileMenu" aria-label="Mobile" aria-hidden="true">
+    <a href="#lineup" onclick="toggleMenu()">Lineup</a>
+    <a href="#day" onclick="toggleMenu()">Day</a>
+    <a href="#quality" onclick="toggleMenu()">Quality</a>
+    <a href="#journal" onclick="toggleMenu()">Notes</a>
+    <a href="#lineup" onclick="toggleMenu()">Shop</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-grid">
+      <div class="hero-text-col">
+        <p class="eyebrow">INDIAN WELLNESS · MADE IN INDIA</p>
+        <h1>Eat protein.<br><span>Drink protein.</span></h1>
+        <p class="lead">GRO-PRO · PRO-FEE · PRO-TEA · PRO-SOUP · NUTRI GRO-PRO — protein designed around your routine, not the other way around.</p>
+        <div class="hero-cta">
+          <a href="#lineup" class="btn-primary">Browse Lineup →</a>
+        </div>
+      </div>
+      <div class="hero-visual-col">
+        <div class="hero-product-cluster" aria-label="DSAND product range">
+          <img class="cluster-item back" src="assets/Complete-Nutrition-Combo-Pack.webp" alt="DSAND GRO-PRO combo" loading="eager" />
+          <img class="cluster-item mid" src="assets/whey-protein-coffee.webp" alt="PRO-FEE protein coffee" loading="eager" />
+          <img class="cluster-item front" src="assets/whey-protein-tea.webp" alt="PRO-TEA protein tea" loading="eager" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCT -->
+  <section class="feature-product" aria-label="Flagship product">
+    <div class="feature-inner">
+      <div class="feature-image" aria-label="GRO-PRO">
+        <img src="assets/Complete-Nutrition-Combo-Pack.webp" alt="GRO-PRO complete nutrition" loading="lazy" />
+        <div class="feature-badge" aria-label="Premium">Premium</div>
+      </div>
+      <div class="feature-body">
+        <p class="feature-label">FLAGSHIP</p>
+        <h2>GRO-PRO</h2>
+        <p class="feature-desc">World's highly digestible premium whey protein — with high-profile amino acids. Designed for real life, not gym mythology.</p>
+        <a href="#lineup" class="link-arrow">Explore GRO-PRO →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LINEUP -->
+  <section class="lineup" id="lineup" aria-label="Product lineup">
+    <header class="lineup-header">
+      <h2>The Lineup</h2>
+      <p>Five products. One idea: nutrition that fits how you actually live.</p>
+    </header>
+    <div class="lineup-grid" aria-label="Products">
+      <a href="#" class="lineup-card large" onclick="openQuick('gro');return false;" aria-label="GRO-PRO">
+        <div class="card-visual">
+          <img src="assets/Complete-Nutrition-Combo-Pack.webp" alt="GRO-PRO" loading="lazy" />
+        </div>
+        <div class="card-text">
+          <h3>GRO-PRO</h3>
+          <p>Premium whey protein with amino acids — for the days that don't slow down.</p>
+        </div>
+      </a>
+      <a href="#" class="lineup-card" onclick="openQuick('profee');return false;" aria-label="PRO-FEE">
+        <div class="card-visual"><img src="assets/whey-protein-coffee.webp" alt="PRO-FEE" loading="lazy" /></div>
+        <div class="card-text"><h3>PRO-FEE</h3><p>Instant protein coffee — your morning ritual, upgraded.</p></div>
+      </a>
+      <a href="#" class="lineup-card" onclick="openQuick('protea');return false;" aria-label="PRO-TEA">
+        <div class="card-visual"><img src="assets/whey-protein-tea.webp" alt="PRO-TEA" loading="lazy" /></div>
+        <div class="card-text"><h3>PRO-TEA</h3><p>Protein tea — familiar with a functional upgrade.</p></div>
+      </a>
+      <a href="#" class="lineup-card" onclick="openQuick('soup');return false;" aria-label="PRO-SOUP">
+        <div class="card-visual"><img src="assets/Meal-Replacement-Protein.webp" alt="PRO-SOUP" loading="lazy" /></div>
+        <div class="card-text"><h3>PRO-SOUP</h3><p>Tomato-whey soup. A savory way to add protein to dinner.</p></div>
+      </a>
+      <a href="#" class="lineup-card" onclick="openQuick('nutri');return false;" aria-label="Nutri Gro Pro">
+        <div class="card-visual"><img src="assets/DSAND-Nutrilabs.webp" alt="Nutri Gro Pro" loading="lazy" /></div>
+        <div class="card-text"><h3>NUTRI GRO-PRO</h3><p>Soy protein with DHA — plant-based daily nutrition.</p></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- DAY -->
+  <section class="day" id="day" aria-label="A day with DSAND">
+    <div class="day-inner">
+      <h2>A day with DSAND</h2>
+      <p class="subtitle">From first coffee to evening meal — nutrition built into the rituals you already have.</p>
+      <div class="timeline">
+        <div class="timeline-item" role="region" aria-label="07:30 Coffee">
+          <div class="time" aria-label="07:30">07:30</div>
+          <img src="assets/whey-protein-coffee.webp" alt="PRO-FEE coffee" loading="lazy" />
+          <h3>Coffee — PRO-FEE</h3>
+          <p>Morning start, with protein built in.</p>
+        </div>
+        <div class="timeline-item" role="region" aria-label="11:00 Tea">
+          <div class="time" aria-label="11:00">11:00</div>
+          <img src="assets/whey-protein-tea.webp" alt="PRO-TEA tea" loading="lazy" />
+          <h3>Tea — PRO-TEA</h3>
+          <p>A familiar ritual with a functional upgrade.</p>
+        </div>
+        <div class="timeline-item" role="region" aria-label="18:30 Soup">
+          <div class="time" aria-label="18:30">18:30</div>
+          <img src="assets/Meal-Replacement-Protein.webp" alt="PRO-SOUP" loading="lazy" />
+          <h3>Soup — PRO-SOUP</h3>
+          <p>A savory way to add protein to dinner.</p>
+        </div>
+        <div class="timeline-item" role="region" aria-label="After training Powder">
+          <div class="time" aria-label="After training">AFTER TRAINING</div>
+          <img src="assets/Complete-Nutrition-Combo-Pack.webp" alt="GRO-PRO powder" loading="lazy" />
+          <h3>Powder — GRO-PRO</h3>
+          <p>Quick, direct, flexible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFFERENTIATOR -->
+  <section class="diff" aria-label="Differentiator">
+    <div class="diff-inner">
+      <h2>Protein doesn't<br>have to look<br>like protein.</h2>
+      <p class="diff-desc">From your first coffee to your evening meal — DSAND brings protein into familiar rituals. No gym mythology required.</p>
+      <div class="diff-gallery" aria-label="Protein in everyday formats">
+        <figure><img src="assets/whey-protein-coffee.webp" alt="PRO-FEE coffee" loading="lazy" /><figcaption>COFFEE</figcaption></figure>
+        <figure><img src="assets/whey-protein-tea.webp" alt="PRO-TEA tea" loading="lazy" /><figcaption>TEA</figcaption></figure>
+        <figure><img src="assets/Meal-Replacement-Protein.webp" alt="PRO-SOUP soup" loading="lazy" /><figcaption>SOUP</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUALITY -->
+  <section class="quality" id="quality" aria-label="Quality">
+    <div class="quality-inner">
+      <div class="quality-left">
+        <h2>What's behind<br>the pack?</h2>
+        <p>Formulation, quality focus, testing, and manufacturing — all designed for real daily nutrition.</p>
+      </div>
+      <div class="quality-right">
+        <dl class="quality-list" aria-label="Quality pillars">
+          <div><dt>Formulation</dt><dd>Carefully developed for digestibility and daily use.</dd></div>
+          <div><dt>Quality</dt><dd>Rigorous sourcing and consistent manufacturing.</dd></div>
+          <div><dt>Testing</dt><dd>Verified at each stage — not just at the end.</dd></div>
+          <div><dt>Manufacturing</dt><dd>Made in India, with clear accountability.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNAL -->
+  <section class="journal" id="journal" aria-label="Journal">
+    <div class="journal-inner">
+      <header class="journal-header">
+        <h2>Notes</h2>
+        <a href="#" class="link-arrow">All notes →</a>
+      </header>
+      <div class="journal-grid">
+        <article class="journal-feature" aria-label="Featured article">
+          <a href="#"><img src="assets/How-to-Identify-Original-Whey-Protein-300x200.webp" alt="How to identify original whey protein" loading="lazy" /></a>
+          <div class="journal-body">
+            <p class="journal-tag">GUIDE</p>
+            <h3><a href="#">How to identify original whey protein</a></h3>
+            <p>Not all protein is the same. Learn what to look for on the label.</p>
+          </div>
+        </article>
+        <div class="journal-secondary">
+          <article aria-label="Functional nutrition">
+            <a href="#"><img src="assets/Functional-Nutrition-Products-300x200.png" alt="Functional nutrition products" loading="lazy" /></a>
+            <div>
+              <p class="journal-tag">PRODUCTS</p>
+              <h3><a href="#">Functional nutrition products</a></h3>
+            </div>
+          </article>
+          <article aria-label="Made in India">
+            <a href="#"><img src="assets/flag.png" alt="Made in India" loading="lazy" /></a>
+            <div>
+              <p class="journal-tag">BRAND</p>
+              <h3><a href="#">Made in India, trusted here</a></h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="close" aria-label="Close">
+    <div class="close-inner">
+      <h2>Make protein<br>part of your day.</h2>
+      <a href="#lineup" class="btn-primary">Shop DSAND →</a>
+      <div class="close-composition" aria-hidden="true">
+        <img src="assets/Complete-Nutrition-Combo-Pack.webp" alt="DSAND combo" loading="lazy" />
+        <img src="assets/whey-protein-coffee.webp" alt="PRO-FEE" loading="lazy" />
+        <img src="assets/whey-protein-tea.webp" alt="PRO-TEA" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo" aria-label="Footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="logo" aria-label="DSAND home">DSAND</a>
+      <p>Everyday nutrition for Indian families — designed around real routines.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <div><strong>SHOP</strong><a href="#lineup">Lineup</a><a href="#">Powder</a><a href="#">Coffee</a><a href="#">Tea</a><a href="#">Soup</a></div>
+      <div><strong>COMPANY</strong><a href="#quality">Quality</a><a href="#journal">Notes</a><a href="#">Contact</a></div>
+      <div><strong>HELP</strong><a href="#">FAQ</a><a href="#">Shipping</a><a href="#">Returns</a></div>
+    </nav>
+  </div>
+  <p class="copyright">© DSAND Nutrilabs Pvt. Ltd.</p>
+</footer>
+
+<div class="overlay" id="quickOverlay" onclick="closeQuick()" aria-hidden="true"></div>
+<div class="quick-modal" id="quickModal" role="dialog" aria-modal="true" aria-label="Quick view" hidden>
+  <button onclick="closeQuick()" aria-label="Close">×</button>
+  <div id="quickContent"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
